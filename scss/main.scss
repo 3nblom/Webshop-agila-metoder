@@ -1,12 +1,19 @@
 @import 'header';
-@import 'hero';
+@import 'startAnimation';
 @import 'filter';
 @import 'produkter';
 @import 'recommended';
 @import 'footer';
+@import 'detaljsida';
+@import 'favorites';
+@import 'checkout';
+@import 'form';
+@import 'termsandconditions';
+@import 'confirmation';
+
+
 
 body {
-  height: 2000px;
   font-family: 'Slabo 27px', serif;
   font-family: 'Roboto Condensed', sans-serif;
   font-family: 'Playfair Display', serif;
@@ -14,6 +21,7 @@ body {
   font-family: 'Baskervville', serif;
   font-family: 'Barlow', sans-serif;
   font-family: Helvetica,Arial,sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 html {
   scroll-behavior: smooth;

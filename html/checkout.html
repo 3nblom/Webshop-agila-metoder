@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://kit.fontawesome.com/a005c4a8c8.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Baskervville|Barlow|Roboto+Condensed|Slabo+27px|Playfair+Display|Montserrat:400,600|Vollkorn:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/checkout.js"></script>
+  <script src="../js/form.js"></script>
+  <title>Gruppuppgift JS</title>
+</head>
+
+<body>
+  <section id="navbar">
+
+    <header class="borderWhite" id="header">
+      <div class="header-left">
+        <div class="menu-toggle-container">
+          <span class="menu-toggle">SHOP</span>
+        </div>
+      </div>
+      <div class="header-middle">
+        <span class="home">COMPANY</span>
+      </div>
+      <div class="header-right">
+        <div class="">
+          <a href="#"><img src="../images/user.png" alt=""></a>
+        </div>
+        <div class="">
+          <a href="#"><img src="../images/like.png" alt=""></a>
+        </div>
+        <div class="">
+          <a href="#"><img src="../images/shopping-bag.png" alt=""></a>
+          <span class="badge badge-pill badge-info"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu menu-hide">
+      <div class="menu-section">
+        <ul>
+          <li class="dropdown-header">Kläder</li>
+          <li id="Coat" class="filter-button">Kappor & Jackor</li>
+          <li id="Dress" class="filter-button">Klänningar</li>
+          <li id="Shoe" class="filter-button">Skor</li>
+          <li id="Shirts" class="filter-button">Skjortor & Tröjor</li>
+        </ul>
+      </div>
+      <div class="menu-section">
+        <ul>
+          <li class="dropdown-header">Accessoarer</li>
+          <li>Smycken</li>
+          <li>Mössor & vantar</li>
+          <li>Underkläder</li>
+          <li>Väskor</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="checkoutProductSection">
+
+    <div id="checkout_headline">
+      <h1>Din varukorg</h1>
+    </div>
+    <div id="checkout_container_subheading">
+      <div id="myProducts" class="checkout_subheading"><span>Produkter</span></div>
+      <div id="quantity" class="checkout_subheading"><span>Antal</span></div>
+      <div id="remove" class="checkout_subheading"><span>Ta bort</span></div>
+    </div>
+    <div id="checkout_container_cart">
+      <div id="checkout_container_items">
+      </div>
+
+    </div>
+    <div id="checkout_container_sum">
+      <div id="checkout_to_pay">Att betala:</div>
+      <div id="checkout_sum">799 SEK</div>
+    </div>
+
+
+
+  <section id="checkoutForm">
+    <!--Liggger i form.js & form.scss-->
+    <div id="checkout_form_container">
+      <form id="checkout_form" method="POST" action="abc.php">
+        <ul id="checkout_headings_form">
+          <li>Steg 1 av 3</li>
+          <li>Steg 2 av 3</li>
+          <li>Steg 3 av 3</li>
+        </ul>
+
+        <!-- error messages -->
+        <span class="fs-error"></span>
+
+        <fieldset>
+
+          <h2>Kunduppgifter</h2>
+        <div class="flex-container" id="checkout_form_innercontainer">
+
+          <form>
+
+            <p><input type="text" name="firstname" id="firstname" class="checkout_form_input" placeholder="Förnamn"/></p>
+
+            <p><input type="text" name="lastname" id="lastname" class="checkout_form_input" placeholder="Efternamn"/></p>
+
+            <p><input type="email" name="email" id="email" class="checkout_form_input" placeholder="E-postadress"/></p>
+
+            <p><input type="tel" name="phone" id="phone" class="checkout_form_input" placeholder="Telefonnummer"/></p>
+
+            <p><input type="text" name="street" id="street" class="checkout_form_input" placeholder="Gatuadress"/></p>
+
+            <p><input type="text" name="zipcode" id="zipcode" class="checkout_form_input" placeholder="Postnummer"/></p>
+
+            <p><input type="text" name="city" id="city" class="checkout_form_input" placeholder="Ort"/></p>
+
+          </form>
+        </div>
+        <input type="button" name="next" class="next action-button" value="Nästa" id="next_button">
+      </fieldset>
+          <fieldset>
+
+            <div class='radio_container'>
+              <label>
+                <input name="checkout_payment_options" type='radio' id="radio">
+                <span class='checkout_payment_info'>Swish</span>
+              </label>
+
+
+              <label>
+                <input name="checkout_payment_options" type='radio' id="radio">
+                <span class='checkout_payment_info'>Kortbetalning</span>
+              </label>
+
+
+              <label>
+                <input name="checkout_payment_options" type='radio' id="radio">
+                <span class='checkout_payment_info'>Faktura</span>
+              </label>
+            </div>
+            <input type="button" name="previous" class="previous action-button" value="Bakåt" is="previous_button"/>
+            <input type="button" name="next" class="next action-button" value="Nästa" id="next_button" />
+
+          </fieldset>
+          <fieldset>
+
+            <form action="../html/confirmation.html" method="get" id="conditions_form" name="checkout_registration">
+              <h4 id="checkout_conditions">Ja, jag godkänner <p id="terms_and_conditions">köpvillkoren</p>
+              </h4>
+              <input type="checkbox" id="checkout_checkbox" name="agree" value="agree">
+            </form>
+
+            <input type="button" name="previous" class="previous action-button" value="BACK" />
+
+            <form action="../html/confirmation.html" class="confirm" name="confirm"><button>Slutför köp</button></form>
+
+          </fieldset>
+
+        </form>
+      </div>
+    </section>
+
+  <!--Liggger i form.js & form.scss SLUT-->
+  </section>
+
+    <footer>
+      <div id="checkout_footer">
+        <h3>Kontakta oss</h3>
+        Tulegatan 41<br> 113 53 Stockholm<br> Telefon
+        <br> 08-673 32 20
+      </div>
+      <div id="checkout_footer_map">
+        <h3>Hitta butik</h3>
+        <a href="https://www.google.se/maps/place/Medieinstitutet/@59.3461053,18.0559554,17z/data=!3m1!4b1!4m5!3m4!1s0x465f9d6c21fb0343:0xe531e25988e5948e!8m2!3d59.3461053!4d18.058144">
+          <img src="../images/map.png" id="map">
+      </div>
+    </footer>
+
+</body>
+
+</html>

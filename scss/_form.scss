@@ -1,0 +1,111 @@
+#checkoutForm {
+  background-color: rgb(241, 241, 241);
+  width: 100%;
+
+  #checkout_form_container {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    margin: auto;
+    width: 80%;
+    background-color: white;
+
+    #checkout_form {
+      width: 100%;
+
+      #checkout_headings_form {
+        padding: 0;
+        li {
+          list-style-type: none;
+          text-align: center;
+        }
+      }
+
+      .fs-error {}
+
+      fieldset {
+        text-align: center;
+        h2 {
+          text-align: center;
+          padding-bottom: 10px;
+        }
+
+        #checkout_form_innercontainer {
+          display: flex;
+          width: 40%;
+          margin: auto;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: center;
+          flex-wrap: wrap;
+          flex-flow: row wrap;
+
+          #form_part_1 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            text-align: center;
+            //width: 50%;
+            display: block;
+            max-width: 100%;
+
+            .checkout_form_input {
+              margin: 10px;
+            }
+          }
+
+          #form_part_2 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            text-align: center;
+            //width: 50%;
+            display: block;
+            max-width: 100%;
+
+            .checkout_form_input {
+              margin: 10px;
+            }
+          }
+        }
+
+        #next_button_container {
+          display: flex;
+          width: 40%;
+          margin: auto;
+          flex-direction: row;
+          justify-content: flex-end;
+
+          #next_button {
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      fieldset {
+        .radio_container {
+          label {
+            #radio {}
+
+            .checkout_payment_info {}
+          }
+        }
+
+        #next_button {}
+      }
+
+      fieldset {
+        #conditions_form {
+          h4 {
+            p {
+              text-decoration: underline;
+              :hover {
+                text-decoration: underline;
+              }
+            }
+          }
+
+          #checkout_checkbox {}
+        }
+      }
+    }
+  }
+}

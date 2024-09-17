@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-  <script src="index.js" charset="utf-8"></script>
-  <link href="https://fonts.googleapis.com/css?family=Baskervville|Barlow|Roboto+Condensed|Slabo+27px|Playfair+Display|Vollkorn:700&display=swap" rel="stylesheet">
+  <script src="js/index.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Baskervville|Barlow|Roboto+Condensed|Slabo+27px|Playfair+Display|Montserrat:400,600|Vollkorn:700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/3387f41f9e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css">
   <title></title>
@@ -14,45 +14,106 @@
 
 <body>
 
-  <section id="hero">
-
-    <header class="borderWhite" id="header">
+  <section id="navbar">
+    <header id="header">
       <div class="header-left">
-          <span class="menu-toggle">Knapp</span>
+        <div class="menu-toggle-container">
+          <span class="menu-toggle">SHOP</span>
+        </div>
       </div>
       <div class="header-middle">
-        <span>Company name</span>
+        <span class="home">COMPANY</span>
       </div>
       <div class="header-right">
-        <i class="fas fa-shopping-cart"><span class="badge badge-pill badge-info">2</span></i>
+        <div class="">
+          <a href="#"><img src="images/user.png" alt=""></a>
+        </div>
+        <div class="favorites-toggle">
+          <a><img src="images/like.png" alt=""></a>
+        </div>
+        <div class="">
+          <a href="html/checkout.html"><img src="images/shopping-bag.png" alt=""></a>
+          <span class="badge badge-pill badge-info"></span>
+        </div>
       </div>
     </header>
-    <div class="menu">
 
+    <div class="menu menu-hide">
+      <div class="menu-section">
+        <ul>
+          <li class="dropdown-header"><a href="index.html">Kläder</a></li>
+          <li id="Coat" class="filter-button">Kappor & Jackor</li>
+          <li id="Dress" class="filter-button">Klänningar</li>
+          <li id="Shoe" class="filter-button">Skor</li>
+          <li id="Shirts" class="filter-button">Skjortor & Tröjor</li>
+        </ul>
+      </div>
+      <div class="menu-section">
+        <ul>
+          <li class="dropdown-header">Accessoarer</li>
+          <li>Smycken</li>
+          <li>Mössor & vantar</li>
+          <li>Underkläder</li>
+          <li>Väskor</li>
+        </ul>
+      </div>
     </div>
 
-    <video id="movie" autoplay="autoplay" playsinline="" muted="muted" loop="loop" preload="" data-v-58d7402a="">
-      <source src="images/snow.mp4" data-v-58d7402a=""></video>
-    <p class="winter-collection">New winter collection</p>
+    <!-- <div class="favorites favorites-hide">
+      <div class="favorite-header">
+        <div class="">
+          <span>Dina favoriter</span>
+        </div>
+      </div>
+      <div class="favoriteContainer">
+
+      </div>
+    </div> -->
+    <div class="dark">
+
+    </div>
   </section>
 
-  <section id="filter">
-    <button id="Coat" class="filter-button btn btn-light" type="button" name="button">Kappor</button>
-    <button id="Dress" class="filter-button btn btn-light" type="button" name="button">Klänningar</button>
-    <button id="Shoe" class="filter-button btn btn-light" type="button" name="button">Skor</button>
-    <button id="Shirts" class="filter-button btn btn-light" type="button" name="button">Skjortor</button>
+  <section id="start-animation">
+    <div class="frontPageContainer">
+      <img id="Dress1" class="frontPageImage frontCategory" src="images/dress_front3.jpg" alt="">
+      <p id="Dress2" class="frontCategory">Klänningar</p>
+    </div>
+    <div class="frontPageContainer">
+      <img id="Shirts1" class="frontPageImage frontCategory" src="images/shirts_front3.jpg" alt="">
+      <p id="Shirts2" class="frontCategory">Skjortor & tröjor</p>
+    </div>
+    <div class="frontPageContainer">
+      <img id="Shoe1" class="frontPageImage frontCategory" src="images/shoe_front.jpg" alt="">
+      <p id="Shoe2" class="frontCategory">Skor & accessoarer</p>
+    </div>
+    <div class="frontPageContainer">
+      <img id="Coat1" class="frontPageImage frontCategory" src="images/coat_front3.jpg" alt="">
+      <p id="Coat2" class="frontCategory">Kappor & jackor</p>
+    </div>
   </section>
 
   <section id="productSection">
-    <div class="flex-container">
-
+    <div class="product-navbar">
+      <div class="product-header-container">
+        <div class="product-header">
+        </div>
+        <div class="product-description">
+          <span>Våra produkter håller säsong efter säsong, oavsett om du föredrar den klassiska trenchcoaten med midjeskärp eller en par riktigt schyssta dojor, varje plagg är tidlöst och användbart.</span>
+        </div>
+      </div>
+      <div class="product-header2">
+      </div>
+    </div>
+    <div class="product-container">
+      <div class="flex-container">
+      </div>
     </div>
   </section>
   <div class="number-of-items">
     <div class="number-of-items-span">
-
     </div>
-    </div>
+  </div>
   </div>
 
   <section id="recommended">
@@ -83,8 +144,18 @@
   </section>
 
   <footer>
-    Footer
+    <div id="checkout_footer">
+      <h3>Kontakta oss</h3>
+      Tulegatan 41<br> 113 53 Stockholm<br> Telefon
+      <br> 08-673 32 20
+    </div>
+    <div id="checkout_footer_map">
+      <h3>Hitta butik</h3>
+      <a href="https://www.google.se/maps/place/Medieinstitutet/@59.3461053,18.0559554,17z/data=!3m1!4b1!4m5!3m4!1s0x465f9d6c21fb0343:0xe531e25988e5948e!8m2!3d59.3461053!4d18.058144">
+        <img src="images/map.png" id="map">
+    </div>
   </footer>
+
 </body>
 
 </html>

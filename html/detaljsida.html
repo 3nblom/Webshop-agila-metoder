@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="../js/detaljsida.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Baskervville|Barlow|Roboto+Condensed|Slabo+27px|Playfair+Display|Montserrat:400,600|Vollkorn:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <script src="https://kit.fontawesome.com/3387f41f9e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="navbar">
+
+    <header class="borderWhite" id="header">
+      <div class="header-left">
+        <div class="menu-toggle-container">
+          <span class="menu-toggle">SHOP</span>
+        </div>
+      </div>
+      <div class="header-middle">
+        <span class="home">COMPANY</span>
+      </div>
+      <div class="header-right">
+        <div class="">
+          <a href="#"><img src="../images/user.png" alt=""></a>
+        </div>
+        <div class="">
+          <a href="#"><img src="../images/like.png" alt=""></a>
+        </div>
+        <div class="">
+          <a href="../html/checkout.html"><img src="../images/shopping-bag.png" alt=""></a>
+          <span class="badge badge-pill badge-info"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu menu-hide">
+      <div class="menu-section">
+        <ul>
+          <li class="dropdown-header">Kläder</li>
+          <li id="Coat" class="filter-button">Kappor & Jackor</li>
+          <li id="Dress" class="filter-button">Klänningar</li>
+          <li id="Shoe" class="filter-button">Skor</li>
+          <li id="Shirts" class="filter-button">Skjortor & Tröjor</li>
+        </ul>
+      </div>
+      <div class="menu-section">
+        <ul>
+          <li class="dropdown-header">Accessoarer</li>
+          <li>Smycken</li>
+          <li>Mössor & vantar</li>
+          <li>Underkläder</li>
+          <li>Väskor</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="detail-box-main">
+    <div class="detail-innerbox-main">
+      <div class="detail-box-Img">
+        <div class="detail-innerbox-Img" id="id-detail-innerbox-Img">
+
+        </div>
+      </div>
+      <div class="detail-innerbox2">
+        <div class="detail-h3-price-radiosize-Box">
+          <div id="h3"></div>
+            <p><span id="spaan"> </span></p>
+          <div class="detail-radiosize-Box">
+            <div class="detail-radiosize-innebox">
+              <input type="radio" name="size" value="S" ;>Small
+            </div>
+            <div class="detail-radiosize-innebox">
+              <input type="radio" name="size" value="M">Medium
+            </div>
+            <div class="detail-radiosize-innebox">
+              <input type="radio" name="size" value="L">Large
+            </div>
+          </div>
+
+          <button id="detailButtontoCart">Lägg i varukorgen</button>
+          <div class="detail-description-text">
+            <h4>Beskrivning</h4>
+
+            <p id="detail-description">
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    <div id="checkout_footer">
+      <h3>Kontakta oss</h3>
+      Tulegatan 41<br> 113 53 Stockholm<br> Telefon
+      <br> 08-673 32 20
+    </div>
+    <div id="checkout_footer_map">
+      <h3>Hitta butik</h3>
+      <a href="https://www.google.se/maps/place/Medieinstitutet/@59.3461053,18.0559554,17z/data=!3m1!4b1!4m5!3m4!1s0x465f9d6c21fb0343:0xe531e25988e5948e!8m2!3d59.3461053!4d18.058144">
+        <img src="../images/map.png" id="map">
+    </div>
+  </footer>
+
+</body>
+
+</html
